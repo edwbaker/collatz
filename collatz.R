@@ -47,11 +47,12 @@ drawCollatz <- function(n, x1, y1, rad1) {
   }
 }
 
-drawCollatz(1, 0, 0, 0)
+drawCollatz(2, 0, 0, 0)
 
 plot.new()
 plot.window(xlim=c(min(endx),max(endx)), ylim=c(min(endy),max(endy)))
 
 for (n in 1:bigNumber) {
   segments(startx[[n]],starty[[n]],endx[[n]],endy[[n]],lwd=0.5, col="purple")
+  #points(endx[[n]],endy[[n]])
 }
